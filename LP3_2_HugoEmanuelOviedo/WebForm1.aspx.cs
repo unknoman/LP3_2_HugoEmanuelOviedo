@@ -20,7 +20,7 @@ namespace LP3_2_HugoEmanuelOviedo
         {
             if(File.Exists(Server.MapPath(".") + "/datos.txt")) // saber si existe datos.txt
             {
-                StreamReader archivoRead = new StreamReader(this.Server.MapPath(".") + "/datos.txt"); // enstancia del streamreader
+                StreamReader archivoRead = new StreamReader(this.Server.MapPath(".") + "/datos.txt"); // instancia del streamreader
                 string linea; // variable que se agrega a la lista
                 Contacto.Clear(); // limpio la lista por si el metodo se vuelve a llamar que no se sumen al grid y quede el doble de los datos
                 while ((linea = archivoRead.ReadLine()) != null)
