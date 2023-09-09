@@ -16,8 +16,6 @@ namespace LP3_2_HugoEmanuelOviedo
         {
             actualizarLista();
         }
-        // creo una bandera para saber si la pagina se cargo por primera vez
-        int bandera = 0;
         public void actualizarLista()
         {
             if(File.Exists(Server.MapPath(".") + "/datos.txt")) // saber si existe datos.txt
